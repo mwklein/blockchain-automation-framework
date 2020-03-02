@@ -15,7 +15,7 @@ spec:
     metadata:
       namespace: supplychain-net
       images:
-        alpineutils: docker_url/alpine-utils:1.0
+        alpineutils: https://hub.docker.com//alpine-utils:1.0
         ca: hyperledger/fabric-ca:1.4.0
     server:
       name: ca
