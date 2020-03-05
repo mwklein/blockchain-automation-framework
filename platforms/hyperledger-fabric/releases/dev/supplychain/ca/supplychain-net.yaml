@@ -15,8 +15,8 @@ spec:
     metadata:
       namespace: supplychain-net
       images:
-        alpineutils: https://hub.docker.com//alpine-utils:1.0
-        ca: hyperledger/fabric-ca:1.4.0
+        alpineutils: index.docker.io/hyperledgerlabs/alpine-utils:1.0
+        ca: hyperledger/fabric-ca:1.4.4
     server:
       name: ca
       tlsstatus: true
@@ -26,7 +26,7 @@ spec:
       storagesize: 512Mi 
     vault:
       role: vault-role
-      address: http://192.168.99.106:8200/
+      address: http://192.168.99.106:8200
       authpath: supplychain-net-auth
       secretcert: secret/crypto/ordererOrganizations/supplychain-net/ca?ca.supplychain-net-cert.pem
       secretkey: secret/crypto/ordererOrganizations/supplychain-net/ca?supplychain-net-CA.key
